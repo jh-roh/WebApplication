@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    .blockTag{
+        background-color:yellowgreen;
+
+    }
+
+    .blockTag > div {
+        background-color:tomato;
+        border:1px solid black;
+
+
+    }
+
+    .inlineTag span{
+        background-color: skyblue;
+        border: 1px solid black;
+    }
+    li {
+        list-style: none;
+    }
+
+    .colorBtn {
+        width: 100px;
+        height: 36px;
+        background-color: green;
+        color: white;
+        text-align: center;
+        line-height: 36px;
+        cursor: pointer;
+        border-radius:6px;
+    }
+
+</style>
+
+<div class="blockTag">
+    <div>block 1</div>
+    <div>block 2</div>
+    <div>block 3</div>
+</div>
+
+<div class="inlineTag">
+    <span>inline 1</span>
+    <span>inline 2</span>
+    <span>inline 3</span>
+</div>
+
+<h1>제목</h1>
+
+<h2>제목</h2>
+<h3>제목</h3>
+
+<ul>
+    <li>목록 1</li>
+    <li>목록 2</li>
+    <li>목록 3</li>
+</ul>
+
+<form>
+    @* <input type="text">
+    <input type="submit"> *@
+
+    <ul>
+        <li><input type="text"></li>
+        <li><input type="submit"></li>
+        <li>
+            <label><input type="radio" name="fruit" id="orange">오렌지</label>
+            <label><input type="radio" name="fruit" id="apple">사과</label>
+            <label><input type="radio" name="fruit" id="strawberry">딸기</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="fruit" id="orange">오렌지</label>
+            <label><input type="checkbox" name="fruit" id="apple">사과</label>
+            <label><input type="checkbox" name="fruit" id="strawberry">딸기</label>
+        </li>
+        <li><input type="button" value="버튼입니다."></li>
+        <li><input type="button" value="저장하기."></li>
+        <li><input type="button" value="비밀입니다."></li>
+        <li><div class="colorBtn">버튼입니다.</div></li>
+    </ul>
+</form>
+
+<a href="https://www.naver.com/" >네이버 바로가기</a>
